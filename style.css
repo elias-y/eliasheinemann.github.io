@@ -90,22 +90,3 @@ body {
 .cv-entry {
   margin-bottom: 20px;
 }
-
-.cv-download {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-.download-btn {
-  display: inline-block;
-  padding: 0.7rem 1.2rem;
-  border: 1px solid var(--fg);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.download-btn:hover {
-  background: var(--fg);
-  color: var(--bg);
-}
