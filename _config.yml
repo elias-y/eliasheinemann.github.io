@@ -1,0 +1,4 @@
+markdown: kramdown
+theme: null
+kramdown:
+  math_engine: mathjax

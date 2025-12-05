@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+
+  <!-- Use your site's CSS -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- Your consistent navbar -->
+  <div class="navbar">
+    <a href="../index.html">Home</a>
+    <a href="../cv.html">CV</a>
+    <a href="../blog.html" class="active">Blog</a>
+  </div>
+
+  <!-- Blog content -->
+  <div class="content">
+    {% include mathjax.html %}
+    {{ content }}
+  </div>
+
+</body>
+</html>
