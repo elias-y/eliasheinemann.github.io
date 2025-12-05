@@ -1,2 +1,2 @@
-# eliasheinemann.github.io
+# Elias Heinemann
 personal website
