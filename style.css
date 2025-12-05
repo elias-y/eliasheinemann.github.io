@@ -2,24 +2,19 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f5f5f5; /* fallback */
+  background-color: #f5f5f5; /* fallback color only */
 }
 
-/* === Global Background Image === */
+/* === Global Background Image (applies to ALL pages) === */
 body {
-  background-image: url('backgrounds/mountains.jpg');
+  background-image: url('backgrounds/mountains.png');
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* === Page-Specific Backgrounds === */
-.cv-page {
-  background-image: url('backgrounds/math.jpg'); /* override if needed */
-}
-
-/* === CV Page Layout (only this page uses flex) === */
+/* === CV Page Layout ONLY === */
 .cv-page {
   display: flex;
   flex-direction: column;
@@ -53,7 +48,7 @@ body {
   border-bottom: 2px solid white;
 }
 
-/* === Content Container === */
+/* === Content === */
 .content {
   background: white;
   max-width: 900px;
@@ -62,7 +57,7 @@ body {
   border-radius: 8px;
 }
 
-/* CV button at top of content */
+/* === CV Button (top) === */
 .cv-button {
   display: inline-block;
   padding: 10px 18px;
@@ -77,7 +72,7 @@ body {
   background: #444;
 }
 
-/* === CV Styling === */
+/* === CV Sections === */
 .content h1, 
 .content h2 {
   font-family: Georgia, serif;
