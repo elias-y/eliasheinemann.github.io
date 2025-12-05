@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Solitary Waves in the Linear SWE</title>
+  <link rel="stylesheet" href="../style.css">
+
+  <!-- MathJax -->
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="../index.html">Home</a>
+    <a href="../cv.html">CV</a>
+    <a href="../blog.html" class="active">Blog</a>
+  </div>
+
+  <div class="content">
+    <h1>Solitary Waves in the Linear Shallow Water Equations</h1>
+    <p><em>Posted on 2025-12-10</em></p>
+
+    <p>
+      In this post we derive initial conditions that produce a 
+      <strong>pure right-traveling wave</strong> in the linear shallow-water equations
+    </p>
+
+    <h2>The equations</h2>
+
+    <p>
+      We consider the linear SWE system:
+    </p>
+
+    <pre>
+$ h_t + \bar h\, v_x = 0, \quad v_t + g\, h_x = 0. $
+    </pre>
+
+    <p>
+      The key observation is that the system diagonalizes under the Riemann invariants:
+    </p>
+
+    <pre>
+$ w_{\pm} = v \pm \sqrt{g / \bar h}\, h. $
+    </pre>
+
+    <p>
+      These satisfy transport equations
+    </p>
+
+    <pre>
+$ w_{+t} + c w_{+x} = 0,\qquad w_{-t} - c w_{-x} = 0, $
+    </pre>
+
+    <p>
+      meaning $w_+$ moves right and $w_-$ moves left.
+    </p>
+
+    <h2>Pure right-moving solutions</h2>
+
+    <p>
+      To kill the left-traveling mode, set:
+    </p>
+
+    <pre>
+$ w_-(x,0) = 0 \quad \Longleftrightarrow \quad v(x,0) = \sqrt{\frac{g}{\bar h}} h(x,0). $
+    </pre>
+
+    <p>
+      This produces a solution of the form:
+    </p>
+
+    <pre>
+$ h(x,t) = h(x - ct, 0),\qquad v(x,t) = v(x - ct, 0). $
+    </pre>
+
+    <p>
+      Exactly the solitary traveling wave used in the assignment.
+    </p>
+
+  </div>
+</body>
+</html>
